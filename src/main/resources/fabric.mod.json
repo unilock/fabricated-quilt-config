@@ -8,7 +8,7 @@
 		"unilock"
 	],
 	"contact": {
-		"sources": "https://github.com/unilock/FabricatedQuiltConfig"
+		"sources": "https://github.com/unilock/fabricated-quilt-config"
 	},
 	"license": "MIT",
 	"icon": "assets/fqconfig/icon.png",
