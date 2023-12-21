@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "fabricated_quilt_config",
+	"version": "${version}",
+	"name": "Fabricated Quilt Config",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"unilock"
+	],
+	"contact": {
+		"sources": "https://github.com/unilock/FabricatedQuiltConfig"
+	},
+	"license": "MIT",
+	"icon": "assets/fabricated_quilt_config/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cc.unilock.fabricated_quilt_config.FabricatedQuiltConfig"
+		]
+	},
+	"depends": {
+		"fabricloader": "*"
+	}
+}
