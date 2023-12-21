@@ -15,11 +15,12 @@ repositories {
 		name = 'Quilt'
 		url = 'https://maven.quiltmc.org/repository/release'
 	}
+	mavenCentral()
 }
 
 loom {
     mods {
-		"fabricated_quilt_config" {
+		"fqconfig" {
 			sourceSet("main")
 		}
 	}
@@ -30,7 +31,10 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	implementation "org.quiltmc:quilt-config:${project.quilt_config_version}"
+	api include("org.quiltmc:quilt-config:${project.quilt_config_version}")
+	api include("org.quiltmc.parsers:json:${project.quilt_parsers_version}")
+	api include("com.electronwill.night-config:core:${project.night_config_version}")
+	api include("com.electronwill.night-config:toml:${project.night_config_version}")
 }
 
 processResources {
