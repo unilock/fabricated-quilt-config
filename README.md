@@ -2,6 +2,8 @@
 
 Quilt Config on Fabric
 
+**UPDATE: If you don't need JSON / overridable `config_serializer`s via Loader entrypoints, you should probably use this instead: https://github.com/sisby-folk/kaleido-config**
+
 ## Usage
 
 Make sure you have the following repositories in your `build.gradle`:
